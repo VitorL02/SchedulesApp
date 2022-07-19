@@ -4,7 +4,7 @@
 
 footer {
     text-align: center;
-    background-color: #353e48;
+    background-color: #00336d;
     padding: 30px;
     bottom: 0px;
     position: absolute;
@@ -20,6 +20,7 @@ body {
 
 header {
     background-color: #FFFF;
+    padding: 5px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
@@ -38,11 +39,67 @@ header {
     color: #222;
 }
 
+#search-container {
+    padding: 50px;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    text-align: center;
+}
+
+#search-container h1 {
+    margin-bottom: 30px;
+    font-weight: 900px;
+}
+
+#search-container form {
+    margin: 0 auto;
+    width: 50%;
+}
+
+#schedules-container {
+    padding: 50px;
+}
+
+#schedules-container h2 {
+    margin-bottom: 10px;
+}
+
+#cards-container {
+    display: flex;
+}
+
+#schedules-container .card {
+    flex: 1 1 24%;
+    max-width: 25%;
+    border-radius: 10px;
+    padding: 0;
+    margin: .5%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+#schedules-container .clock-icon {
+    width: 170px;
+    margin: 0 auto;
+    height: 170px;
+}
 
 
 
 .container-fluid {
     padding: 0;
+}
+
+.btn-primary {
+    background-color: #222;
+    border-color: #222;
+
+}
+
+.btn-primary:hover {
+    background-color: rgb(58, 57, 57);
+    border-color: #222;
+    opacity: .75;
 }
 
 
