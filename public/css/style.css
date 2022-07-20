@@ -84,7 +84,20 @@ header {
     height: 170px;
 }
 
+#schedule-create-container {
+    padding: 30px;
+    margin-bottom: 120px;
+}
 
+#schedule-create-container label {
+    font-weight: bold;
+}
+
+#schedule-create-container input,
+#schedule-create-container select {
+    font-size: 20px;
+    margin: 5px;
+}
 
 .container-fluid {
     padding: 0;

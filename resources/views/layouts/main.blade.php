@@ -16,7 +16,7 @@
             <header> 
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <div class="collapse navbar-collapse" id="navbar">
-                        <a href="" class="navbar-brand">
+                        <a href="/" class="navbar-brand">
                             <img src="img/Icon.png" class="logo-image" alt="Logo">SchedulesApp
                         </a>
                         <ul class="navbar-nav">
