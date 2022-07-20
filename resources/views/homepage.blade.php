@@ -17,10 +17,10 @@
                 <div class="card col-md-3">
                 <ion-icon name="time-outline" class='clock-icon'></ion-icon>
                 <div class="card-body">
-                    <p class="card-date">Data do Agendamento: {{$schedule->date}}</p>
+                    <p class="card-date">Data do Agendamento: {{date('d/y/m',strtotime($schedule->date))}}</p>
                     <h5 class="card-title">Nome: {{$schedule->name}}</h5>
                     <h5 class="card-service">Serviço: {{$schedule->service}}</h5>
-                    <p class="card-hour">Horario: {{$schedule->date}}</p>
+                    <p class="card-hour">Horario: {{date('H:i',strtotime($schedule->date))}}</p>
                     <a href="" class="btn btn-primary" class="edit-button">Editar</a>
                   
                 </div>
