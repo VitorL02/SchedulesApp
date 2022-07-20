@@ -5,10 +5,11 @@
 @section('content')
     <div id="schedule-create-container" class='col-md-6 offset-md-3'>
         <h1>Agende Seu Horário!</h1>
-        <form action="/schedules" method="post" enctype="multipart/form-data">
+        <form action="/schedules" method="POST" enctype="multipart/form-data">
+            @csrf
             <div class="form-group">
                 <label for="name">Digite Seu Nome: </label>
-                <input type="text" required placeholder="Digite seu Nome" name="name" id="title" class="form-control">
+                <input type="text" required placeholder="Digite seu Nome" name="name" id="name" class="form-control">
             </div>
             <div class="form-group">
                 <label for="date">Selecione a data que deseja Agendar: </label>
