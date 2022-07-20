@@ -8,7 +8,9 @@ use App\Models\Scheduling;
 class ScheduleController extends Controller
 {
     public function index(){
-        return view('homepage');
+        $scheduling = Scheduling::all();
+
+        return view('homepage',['scheduling'=>$scheduling]);
     }
 
     public function createSchedule(){
