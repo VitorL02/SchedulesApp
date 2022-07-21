@@ -99,6 +99,37 @@ header {
     margin: 5px;
 }
 
+#auth-form {
+    width: 500px;
+    height: 500px;
+    padding: 50px;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+}
+
+
+#auth-container {
+    padding: 50px;
+}
+
+.error-forgot-pass {
+    margin-top: 10px;
+}
+
+.list-nav {
+    margin-right: 20px;
+}
+
+.login-button {
+    margin-left: 140px;
+}
+
+.title-login {
+    margin-left: 80px;
+}
+
 .container-fluid {
     padding: 0;
 }
