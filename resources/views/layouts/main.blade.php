@@ -8,6 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
         <link rel="stylesheet" href="/css/style.css">
+        <script src="/js/script.js"></script>
 
         <title>@yield('title')</title>
 
@@ -19,22 +20,29 @@
                         <a href="/" class="navbar-brand">
                             <img src="img/Icon.png" class="logo-image" alt="Logo">SchedulesApp
                         </a>
-                        <ul class="navbar-nav">
+                        <ul class="navbar-nav list-nav">
                             <li class="nav-item">
                                 <a href="/"  class="nav-link">Home</a>
                             </li>
+                            @guest
+                            <li class="nav-item">
+                                <a href="/login" class="nav-link">Login</a>
+                            </li>
+                            @endguest
                             <li class="nav-item">
                                 <a href="/create-schedule" class="nav-link">Criar Agendamento</a>
                             </li>
                             <li class="nav-item">
-                                <a href="/dashboard" class="nav-link">Meus Agendamentos</a>
+                                <a href="/#" class="nav-link">Meus Agendamentos</a>
                             </li>
+                            @auth
                             <li class="nav-item">
-                                <a href="/login" class="nav-link">Login</a>
+                                <form action="/logout" method="POST">
+                                @csrf
+                                <a href="/logout" class="nav-link" onclick="event.preventDefault();this.closest('form').submit();">Logout</a>
+                                </form>
                             </li>
-                            <li class="nav-item">
-                                <a href="/logout" class="nav-link">Logout</a>
-                            </li>
+                            @endauth
                         </ul>
                     </div>
                 </nav>
