@@ -24,9 +24,11 @@
                             <li class="nav-item">
                                 <a href="/"  class="nav-link">Home</a>
                             </li>
+                            @guest
                             <li class="nav-item">
                                 <a href="/login" class="nav-link">Login</a>
                             </li>
+                            @endguest
                             <li class="nav-item">
                                 <a href="/create-schedule" class="nav-link">Criar Agendamento</a>
                             </li>
@@ -35,7 +37,10 @@
                             </li>
                             @auth
                             <li class="nav-item">
-                                <a href="/logout" class="nav-link">Logout</a>
+                                <form action="/logout" method="POST">
+                                @csrf
+                                <a href="/logout" class="nav-link" onclick="event.preventDefault();this.closest('form').submit();">Logout</a>
+                                </form>
                             </li>
                             @endauth
                         </ul>
