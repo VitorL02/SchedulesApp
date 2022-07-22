@@ -8,9 +8,17 @@ use App\Models\Scheduling;
 class ScheduleController extends Controller
 {
     public function index(){
-        $scheduling = Scheduling::all();
+        $search = request('search');
+        if($search){
+            $scheduling = Scheduling::where(
+                'date','=',$search
+        )->get();
+        }else{
+            $scheduling = Scheduling::all();
+        }
 
-        return view('homepage',['scheduling'=>$scheduling]);
+
+        return view('homepage',['scheduling'=>$scheduling,'search'=>$search]);
     }
 
     public function createSchedule(){
