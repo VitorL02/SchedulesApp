@@ -30,7 +30,7 @@
                     <option value="Sombrancelha de Rena">Sombrancelha de Rena</option>
                 </select>
             </div>
-            <input type="submit" class="btn btn-primary"  class="form-check-input" value="Criar Evento">
+            <input type="submit" class="btn btn-primary"  class="form-check-input" value="Criar Agendamento">
         </form>
     </div>
 @endSection

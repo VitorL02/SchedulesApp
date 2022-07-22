@@ -6,7 +6,8 @@
     <div id="search-container" class="col-md-12">
         <h1>Busque um Horario</h1>
         <form action="/" method="get">
-            <input type="datetime-local" name="search" id="search" class="form-control" placeholder="Encontre Seu Horario">
+            <input type="datetime-local" name="search"  id="search" class="form-control" placeholder="Encontre Seu Horario">
+            <input type="submit" style='margin-top:5px;' class ='btn btn-primary' value="Busque um Horario">
         </form>
     </div>
     <div id="schedules-container">
@@ -17,7 +18,7 @@
                 <div class="card col-md-3">
                 <ion-icon name="time-outline" class='clock-icon'></ion-icon>
                 <div class="card-body">
-                    <p class="card-date">Data do Agendamento: {{date('d/y/m',strtotime($schedule->date))}}</p>
+                    <p class="card-date">Data do Agendamento: {{date('d/m/y,strtotime($schedule->date))}}</p>
                     <h5 class="card-title">Nome: {{$schedule->name}}</h5>
                     <h5 class="card-service">Serviço: {{$schedule->service}}</h5>
                     <p class="card-hour">Horario: {{date('H:i',strtotime($schedule->date))}}</p>

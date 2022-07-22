@@ -18,7 +18,7 @@
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <div class="collapse navbar-collapse" id="navbar">
                         <a href="/" class="navbar-brand">
-                            <img src="img/Icon.png" class="logo-image" alt="Logo">SchedulesApp
+                            <img src="img/Icon.png" class="logo-image" alt="Logo">Studio Crispim
                         </a>
                         <ul class="navbar-nav list-nav">
                             <li class="nav-item">
@@ -56,7 +56,7 @@
                 </div>
             </main>    
         <footer>
-            <p>SchedulesApp - Salão Arca da Aliança - Agende Seu horario Conosco &copy;</p>
+            <p>Studio Crispim - Salão Arca da Aliança - Agende Seu horario Conosco &copy;</p>
         </footer>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
