@@ -17,6 +17,7 @@ use App\Http\Controllers\ScheduleController;
 Route::get('/',[ScheduleController::class,'index']);
 Route::get('/create-schedule',[ScheduleController::class,'createSchedule'])->middleware('auth');
 Route::get('/dashboard',[ScheduleController::class,'goDashBoard'])->name('dashboard')->middleware('auth');
+Route::get('/dashboard',[ScheduleController::class,'dashboard'])->middleware('auth');
 Route::post('/schedules',[ScheduleController::class,'store']);
 
 // Route::middleware([

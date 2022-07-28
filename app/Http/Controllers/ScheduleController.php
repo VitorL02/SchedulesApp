@@ -24,8 +24,14 @@ class ScheduleController extends Controller
     public function createSchedule(){
         return view('schedules.create-schedule');
     }
-    public function goDashBoard(){
-        return view('dashboard');
+
+    public function dashboard(){
+        $user = auth()->user();
+
+        $schedulings = $user->schedulings;
+
+        return view('schedules.dashboard',['schedulings'=>$schedulings]);
+
     }
 
     public function store(Request $request){

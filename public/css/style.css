@@ -6,14 +6,18 @@ footer {
     text-align: center;
     background-color: #00336d;
     padding: 30px;
-    bottom: 0px;
+    bottom: 0;
     position: absolute;
     color: #FFFF;
     width: 100%;
 }
 
+footer p {
+    margin-bottom: 0;
+}
+
 body {
-    min-width: 100vh;
+    min-height: 100vh;
     padding-bottom: 100px;
     position: relative;
 }
@@ -161,4 +165,13 @@ header {
     padding: 10px;
     margin-bottom: 0px;
     text-align: center;
+}
+
+.dasboard-title-container {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.dashboard-schedules-container th {
+    width: 25%;
 }
