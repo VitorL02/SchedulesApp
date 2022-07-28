@@ -10,4 +10,9 @@ class Scheduling extends Model
     use HasFactory;
     protected $table = 'scheduling';
     protected $date=['date'];
+
+
+    public function user(){
+        return $this->belongsTo('App\Models\User');
+    }
 }

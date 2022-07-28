@@ -24,6 +24,9 @@ class ScheduleController extends Controller
     public function createSchedule(){
         return view('schedules.create-schedule');
     }
+    public function goDashBoard(){
+        return view('dashboard');
+    }
 
     public function store(Request $request){
         $scheduling = new Scheduling;
@@ -31,6 +34,9 @@ class ScheduleController extends Controller
         $scheduling->name=$request->name;
         $scheduling->date=$request->date;
         $scheduling->service=$request->service;
+
+        $user = auth()->user();
+        $scheduling->user_id = $user->id;
 
         $scheduling->save();
 
