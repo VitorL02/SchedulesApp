@@ -26,8 +26,14 @@
                     <h5 class="card-title">Nome: {{$schedule->name}}</h5>
                     <h5 class="card-service">Serviço: {{$schedule->service}}</h5>
                     <p class="card-hour">Horario: {{date('H:i',strtotime($schedule->date))}}</p>
-                    <a href="" class="btn btn-primary" class="edit-button">Editar</a>
-                  
+                   @auth
+                    <form action="/events/{{$schedule->id}}" method="POST">
+                    <a href="#" class="btn btn-info edit-btn"><ion-icon name="create-outline"></ion-icon>Editar</a>
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="btn btn-danger delete-btn"><ion-icon name="trash-outline"></ion-icon>Deletar</button>
+                    </form>
+                    @endauth
                 </div>
                 </div>
                 @endforeach
