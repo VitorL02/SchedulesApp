@@ -33,7 +33,7 @@
                                 <a href="/create-schedule" class="nav-link">Criar Agendamento</a>
                             </li>
                             <li class="nav-item">
-                                <a href="/#" class="nav-link">Meus Agendamentos</a>
+                                <a href="/dashboard" class="nav-link">Meus Agendamentos</a>
                             </li>
                             @auth
                             <li class="nav-item">
