@@ -34,6 +34,12 @@ class ScheduleController extends Controller
 
     }
 
+    public function destroy($id){
+        Scheduling::findOrFail($id)->delete();
+
+        return redirect('/')->with('msg','Evento Excluido com Sucesso');
+    }
+
     public function store(Request $request){
         $scheduling = new Scheduling;
 
