@@ -1,0 +1,181 @@
+* {
+    font-family: 'Roboto';
+}
+
+footer {
+    text-align: center;
+    background-color: #00336d;
+    padding: 30px;
+    bottom: 0;
+    position: absolute;
+    color: #FFFF;
+    width: 100%;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+body {
+    min-height: 100vh;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+header {
+    background-color: #FFFF;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+
+#navbar {
+    justify-content: space-between;
+    background-color: #FFFF;
+}
+
+#navbar a {
+    font-size: 16px;
+    color: #757575;
+}
+
+#navbar a:hover {
+    color: #222;
+}
+
+#search-container {
+    padding: 50px;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    text-align: center;
+}
+
+#search-container h1 {
+    margin-bottom: 30px;
+    font-weight: 900px;
+}
+
+#search-container form {
+    margin: 0 auto;
+    width: 50%;
+}
+
+#schedules-container {
+    padding: 50px;
+}
+
+#schedules-container h2 {
+    margin-bottom: 10px;
+}
+
+#cards-container {
+    display: flex;
+}
+
+#schedules-container .card {
+    flex: 1 1 24%;
+    max-width: 25%;
+    border-radius: 10px;
+    padding: 0;
+    margin: .5%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+#schedules-container .clock-icon {
+    width: 170px;
+    margin: 0 auto;
+    height: 170px;
+}
+
+#schedule-create-container {
+    padding: 30px;
+    margin-bottom: 120px;
+}
+
+#schedule-create-container label {
+    font-weight: bold;
+}
+
+#schedule-create-container input,
+#schedule-create-container select {
+    font-size: 20px;
+    margin: 5px;
+}
+
+#auth-form {
+    width: 500px;
+    height: 500px;
+    padding: 50px;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+}
+
+
+#auth-container {
+    padding: 50px;
+}
+
+.error-forgot-pass {
+    margin-top: 10px;
+}
+
+.list-nav {
+    margin-right: 20px;
+}
+
+.login-button {
+    margin-left: 140px;
+}
+
+.title-login {
+    margin-left: 80px;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.btn-primary {
+    background-color: #222;
+    border-color: #222;
+
+}
+
+.btn-primary:hover {
+    background-color: rgb(58, 57, 57);
+    border-color: #222;
+    opacity: .75;
+}
+
+
+
+.logo-image {
+    width: 100px;
+    height: 100px;
+}
+
+.msg {
+    background-color: #D4EDDA;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.dasboard-title-container {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.dashboard-schedules-container th {
+    width: 20%;
+}
+
+.dashboard-schedules-container form {
+    display: inline-block;
+}

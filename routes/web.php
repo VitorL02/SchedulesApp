@@ -12,7 +12,21 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+use App\Http\Controllers\ScheduleController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',[ScheduleController::class,'index']);
+Route::get('/create-schedule',[ScheduleController::class,'createSchedule'])->middleware('auth');
+Route::get('/dashboard',[ScheduleController::class,'goDashBoard'])->name('dashboard')->middleware('auth');
+Route::get('/dashboard',[ScheduleController::class,'dashboard'])->middleware('auth');
+Route::post('/schedules',[ScheduleController::class,'store']);
+Route::delete('/schedules/{id}',[ScheduleController::class,'destroy'])->middleware('auth');
+Route::get('/schedules/edit/{id}',[ScheduleController::class,'edit'])->middleware('auth');
+Route::put('/schedules/update/{id}',[ScheduleController::class,'update'])->middleware('auth');
+
+// Route::middleware([
+//     'auth:sanctum',
+//     config('jetstream.auth_session'),
+//     'verified'
+// ])->group(function () {
+//     Route::get('/',[ScheduleController::class,'index']); 
+// });
