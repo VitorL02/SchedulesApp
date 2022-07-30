@@ -40,6 +40,17 @@ class ScheduleController extends Controller
         return redirect('/')->with('msg','Evento Excluido com Sucesso');
     }
 
+    public function edit($id){
+        $schedule = Scheduling::findOrFail($id);
+
+        return view('schedules.edit',['schedule'=>$schedule]);
+    }
+    public function update(Request $request){
+        Scheduling::findOrFail($request->id)->update($request->all());
+
+        return redirect('/')->with('msg','Agendamento Editado com sucesso');
+    }
+
     public function store(Request $request){
         $scheduling = new Scheduling;
 
@@ -54,4 +65,6 @@ class ScheduleController extends Controller
 
         return redirect('/')->with('msg','Agendamento Salvo com sucesso');
     }
+
+    
 }

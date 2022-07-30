@@ -11,7 +11,8 @@ class Scheduling extends Model
     protected $table = 'scheduling';
     protected $date=['date'];
 
-
+    protected $guarded=[];
+    
     public function user(){
         return $this->belongsTo('App\Models\User');
     }
