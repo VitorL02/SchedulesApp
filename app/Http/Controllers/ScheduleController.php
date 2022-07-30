@@ -37,7 +37,7 @@ class ScheduleController extends Controller
     public function destroy($id){
         Scheduling::findOrFail($id)->delete();
 
-        return redirect('/')->with('msg','Evento Excluido com Sucesso');
+        return redirect('/')->with('msg','Agendamento Excluido com Sucesso');
     }
 
     public function edit($id){
