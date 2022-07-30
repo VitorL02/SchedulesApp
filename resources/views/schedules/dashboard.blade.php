@@ -27,8 +27,8 @@
                 <td>{{$scheduling->date}}</td>
                 <td>{{$scheduling->service}}</td>
                 <td>
-                     <a href="#" class="btn btn-info edit-btn"><ion-icon name="create-outline"></ion-icon>Editar</a>
-                    <form action="/events/{{$scheduling->id}}" method="POST">
+                     <a href="/schedules/edit/{{$scheduling->id}}" class="btn btn-info edit-btn"><ion-icon name="create-outline"></ion-icon>Editar</a>
+                    <form action="/schedules/{{$scheduling->id}}" method="POST">
                         @csrf
                         @method('DELETE')
                         <button type="submit" class="btn btn-danger delete-btn"><ion-icon name="trash-outline"></ion-icon>Deletar</button>
