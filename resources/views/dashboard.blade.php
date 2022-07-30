@@ -10,7 +10,7 @@
 <div class="col-md-10 offset-md-1 dashboard-events-container">
        @if(count($scheduling)>0)
        @else
-       <p>Você não tem eventos, <a href="/create-schedule"></a></p> 
+       <p>Você não tem Agendamentos <a href="/create-schedule"></a></p> 
 </div>
 
 

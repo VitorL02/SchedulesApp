@@ -19,6 +19,7 @@ Route::get('/create-schedule',[ScheduleController::class,'createSchedule'])->mid
 Route::get('/dashboard',[ScheduleController::class,'goDashBoard'])->name('dashboard')->middleware('auth');
 Route::get('/dashboard',[ScheduleController::class,'dashboard'])->middleware('auth');
 Route::post('/schedules',[ScheduleController::class,'store']);
+Route::get('/register',[ScheduleController::class,'register']);
 Route::delete('/schedules/{id}',[ScheduleController::class,'destroy'])->middleware('auth');
 Route::get('/schedules/edit/{id}',[ScheduleController::class,'edit'])->middleware('auth');
 Route::put('/schedules/update/{id}',[ScheduleController::class,'update'])->middleware('auth');

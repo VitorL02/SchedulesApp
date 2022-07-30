@@ -65,6 +65,8 @@ class ScheduleController extends Controller
 
         return redirect('/')->with('msg','Agendamento Salvo com sucesso');
     }
-
+    public function register(){
+        return redirect('/');
+    }
     
 }

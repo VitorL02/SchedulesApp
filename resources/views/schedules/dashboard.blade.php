@@ -1,5 +1,5 @@
 @extends('layouts.main')
-@section('title','SchedulesApp - Meus Agendamentos')
+@section('title','Studio Crispim - Meus Agendamentos')
 
 
 @section('content')
